@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-docker-python-rhtap-three-component-scenarios-ppfr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/multi-comp-e2e-nwnr-tenant/mc-three-scenarios/devfile-docker-python-rhtap-three-component-scenarios-ppfr@sha256:12117526092fa4c234887208b08fb543ff78d2c0d1183d0b9d4a8cee939dbfd4
+        name: my-python
+        resources: {}
+status: {}
